@@ -1,0 +1,122 @@
+/* ============ VARIABLES ============ */
+:root {
+    --color-bg: rgb(10, 12, 28);
+    --color-moon: rgb(220, 228, 255);
+    --color-accent: rgb(140, 160, 255);
+    --color-button: rgba(25, 30, 65, 0.85);
+    --color-button-hover: rgba(70, 85, 170, 0.95);
+    --color-button-press: rgba(40, 50, 110, 1);
+    --color-text: rgb(225, 230, 255);
+    --color-danger: rgb(255, 120, 140);
+}
+
+/* ============ FONDO ============ */
+.root {
+    flex-grow: 1;
+    background-color: var(--color-bg);
+    /* Descomenta y cambia la ruta para poner un fondo propio:
+    background-image: url('project://database/Assets/UI/Images/background.png');
+    -unity-background-scale-mode: scale-and-crop; */
+    align-items: center;
+    justify-content: center;
+}
+
+/* ============ LUNA DECORATIVA ============ */
+.moon {
+    position: absolute;
+    top: 6%;
+    right: 10%;
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    background-color: var(--color-moon);
+    border-width: 8px;
+    border-color: rgba(140, 160, 255, 0.25);
+    opacity: 0.9;
+}
+
+/* ============ TÍTULO ============ */
+.title-container {
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.title {
+    font-size: 96px;
+    -unity-font-style: bold;
+    letter-spacing: 18px;
+    color: var(--color-moon);
+    -unity-text-align: middle-center;
+    text-shadow: 0 0 18px rgba(140, 160, 255, 0.9);
+}
+
+.title-line {
+    width: 420px;
+    height: 3px;
+    margin-top: 6px;
+    background-color: var(--color-accent);
+    opacity: 0.8;
+}
+
+.subtitle {
+    margin-top: 14px;
+    font-size: 20px;
+    letter-spacing: 6px;
+    color: var(--color-accent);
+    -unity-font-style: italic;
+}
+
+/* ============ BOTONES ============ */
+.menu-buttons {
+    align-items: center;
+}
+
+.menu-button {
+    width: 360px;
+    height: 64px;
+    margin: 8px 0;
+    font-size: 24px;
+    letter-spacing: 5px;
+    color: var(--color-text);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+
+    background-color: var(--color-button);
+    border-width: 2px;
+    border-color: rgba(140, 160, 255, 0.4);
+    border-radius: 32px;
+
+    transition-property: scale, background-color, border-color, color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.menu-button:hover {
+    scale: 1.07 1.07;
+    background-color: var(--color-button-hover);
+    border-color: var(--color-moon);
+    color: white;
+}
+
+.menu-button:active {
+    scale: 0.97 0.97;
+    background-color: var(--color-button-press);
+}
+
+.menu-button:focus {
+    border-color: var(--color-moon);
+}
+
+.menu-button--quit:hover {
+    border-color: var(--color-danger);
+    color: var(--color-danger);
+}
+
+/* ============ VERSIÓN ============ */
+.version {
+    position: absolute;
+    bottom: 12px;
+    right: 18px;
+    font-size: 14px;
+    color: rgba(225, 230, 255, 0.4);
+}
