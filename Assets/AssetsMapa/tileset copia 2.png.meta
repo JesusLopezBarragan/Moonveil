@@ -1,0 +1,990 @@
+fileFormatVersion: 2
+guid: 929ebbdaea28d46608444d980e7f8e4c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8408224081178712608
+    second: tileset copia 2_0
+  - first:
+      213: -7012046661668243848
+    second: tileset copia 2_1
+  - first:
+      213: 6764003161555698443
+    second: tileset copia 2_2
+  - first:
+      213: 2049734460430062568
+    second: tileset copia 2_3
+  - first:
+      213: 6320296135889128621
+    second: tileset copia 2_4
+  - first:
+      213: -5865972547699924667
+    second: tileset copia 2_5
+  - first:
+      213: 6137903776527811547
+    second: tileset copia 2_6
+  - first:
+      213: 4656812299566974014
+    second: tileset copia 2_7
+  - first:
+      213: -5202379829605730792
+    second: tileset copia 2_8
+  - first:
+      213: 5141232803903514923
+    second: tileset copia 2_9
+  - first:
+      213: -9026433151279551687
+    second: tileset copia 2_10
+  - first:
+      213: 2212678090458697740
+    second: tileset copia 2_11
+  - first:
+      213: 315147030583625337
+    second: tileset copia 2_12
+  - first:
+      213: 2903444634281882847
+    second: tileset copia 2_13
+  - first:
+      213: -8507808027658406780
+    second: tileset copia 2_14
+  - first:
+      213: 87018563492351815
+    second: tileset copia 2_15
+  - first:
+      213: 1953060101921065100
+    second: tileset copia 2_16
+  - first:
+      213: 7534980869717797919
+    second: tileset copia 2_17
+  - first:
+      213: 2266073058351942029
+    second: tileset copia 2_18
+  - first:
+      213: -2798088060295009862
+    second: tileset copia 2_19
+  - first:
+      213: 4446179217437120500
+    second: tileset copia 2_20
+  - first:
+      213: -6440291722398721967
+    second: tileset copia 2_21
+  - first:
+      213: 8081240130713750036
+    second: tileset copia 2_22
+  - first:
+      213: -6728352021928719793
+    second: tileset copia 2_23
+  - first:
+      213: -4914066712723630211
+    second: tileset copia 2_24
+  - first:
+      213: 5173251566252598068
+    second: tileset copia 2_25
+  - first:
+      213: -6543586905329990145
+    second: tileset copia 2_26
+  - first:
+      213: -2821911820237052199
+    second: tileset copia 2_27
+  - first:
+      213: -3102363977470734129
+    second: tileset copia 2_28
+  - first:
+      213: 6135606370956395245
+    second: tileset copia 2_29
+  - first:
+      213: -3386955142243020375
+    second: tileset copia 2_30
+  - first:
+      213: -234161079677906386
+    second: tileset copia 2_31
+  - first:
+      213: -3515120414072720851
+    second: tileset copia 2_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 10
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tileset copia 2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 559
+        width: 193
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02ada8ec04300b470800000000000000
+      internalID: 8408224081178712608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_1
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 722
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 876fcce66b430be90800000000000000
+      internalID: -7012046661668243848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_2
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 725
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b038528c9019edd50800000000000000
+      internalID: 6764003161555698443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_3
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 687
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e39fcdb1ae127c10800000000000000
+      internalID: 2049734460430062568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_4
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 641
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dac02f669d336b750800000000000000
+      internalID: 6320296135889128621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_5
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 607
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54127201c01e79ea0800000000000000
+      internalID: -5865972547699924667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_6
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 607
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd30879f6f63e2550800000000000000
+      internalID: 6137903776527811547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_7
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 543
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e340c551d1250a040800000000000000
+      internalID: 4656812299566974014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 575
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81671bdbb1f6dc7b0800000000000000
+      internalID: -5202379829605730792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 463
+        width: 129
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b292148eef3595740800000000000000
+      internalID: 5141232803903514923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 527
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b2c2d7fdaabb280800000000000000
+      internalID: -9026433151279551687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 527
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c009410000305be10800000000000000
+      internalID: 2212678090458697740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_12
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 508
+        width: 33
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 976c4f9fd80af5400800000000000000
+      internalID: 315147030583625337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_13
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 508
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd4b263038b1b4820800000000000000
+      internalID: 2903444634281882847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 351
+        width: 49
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4843436dca13ee980800000000000000
+      internalID: -8507808027658406780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_15
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 431
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74f83d52ce6253100800000000000000
+      internalID: 87018563492351815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_16
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 431
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c884eff90d9aa1b10800000000000000
+      internalID: 1953060101921065100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_17
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 431
+        width: 82
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1ca4e0dd21a19860800000000000000
+      internalID: 7534980869717797919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_18
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 351
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d89862eb075b27f10800000000000000
+      internalID: 2266073058351942029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_19
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 367
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab9aadbebb13b29d0800000000000000
+      internalID: -2798088060295009862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_20
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 367
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f7501ff07004bd30800000000000000
+      internalID: 4446179217437120500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_21
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 340
+        width: 79
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1581984fccc7f96a0800000000000000
+      internalID: -6440291722398721967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 239
+        width: 49
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41a03d72515562070800000000000000
+      internalID: 8081240130713750036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_23
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 239
+        width: 50
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4a48210c7710a2a0800000000000000
+      internalID: -6728352021928719793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_24
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 239
+        width: 50
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7759815c5abdcbb0800000000000000
+      internalID: -4914066712723630211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_25
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 271
+        width: 65
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4332834f3e41bc740800000000000000
+      internalID: 5173251566252598068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 127
+        width: 129
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff588e601628035a0800000000000000
+      internalID: -6543586905329990145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_27
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 175
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d66b4f862e86d8d0800000000000000
+      internalID: -2821911820237052199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_28
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 159
+        width: 60
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc093e6466032f4d0800000000000000
+      internalID: -3102363977470734129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_29
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 127
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de2ca7e8c7d062550800000000000000
+      internalID: 6135606370956395245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 145
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a11c643e3e1ff0d0800000000000000
+      internalID: -3386955142243020375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_31
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 15
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2293991db710ccf0800000000000000
+      internalID: -234161079677906386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset copia 2_32
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 17
+        width: 50
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d22b8787b98c73fc0800000000000000
+      internalID: -3515120414072720851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      tileset copia 2_0: 8408224081178712608
+      tileset copia 2_1: -7012046661668243848
+      tileset copia 2_10: -9026433151279551687
+      tileset copia 2_11: 2212678090458697740
+      tileset copia 2_12: 315147030583625337
+      tileset copia 2_13: 2903444634281882847
+      tileset copia 2_14: -8507808027658406780
+      tileset copia 2_15: 87018563492351815
+      tileset copia 2_16: 1953060101921065100
+      tileset copia 2_17: 7534980869717797919
+      tileset copia 2_18: 2266073058351942029
+      tileset copia 2_19: -2798088060295009862
+      tileset copia 2_2: 6764003161555698443
+      tileset copia 2_20: 4446179217437120500
+      tileset copia 2_21: -6440291722398721967
+      tileset copia 2_22: 8081240130713750036
+      tileset copia 2_23: -6728352021928719793
+      tileset copia 2_24: -4914066712723630211
+      tileset copia 2_25: 5173251566252598068
+      tileset copia 2_26: -6543586905329990145
+      tileset copia 2_27: -2821911820237052199
+      tileset copia 2_28: -3102363977470734129
+      tileset copia 2_29: 6135606370956395245
+      tileset copia 2_3: 2049734460430062568
+      tileset copia 2_30: -3386955142243020375
+      tileset copia 2_31: -234161079677906386
+      tileset copia 2_32: -3515120414072720851
+      tileset copia 2_4: 6320296135889128621
+      tileset copia 2_5: -5865972547699924667
+      tileset copia 2_6: 6137903776527811547
+      tileset copia 2_7: 4656812299566974014
+      tileset copia 2_8: -5202379829605730792
+      tileset copia 2_9: 5141232803903514923
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
