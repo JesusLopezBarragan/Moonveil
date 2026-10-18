@@ -1,5 +1,5 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/MainMenu.uss" />
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="false"> <!--Aquí se indica el entorno en el que va a trabajar este archivo. -->
+    <Style src="MainMenu.uss" /> <!-- Se le indica cual es el archivo donde tiene la configuración de estilos. -->
 
     <!-- Contenedor a pantalla completa (aquí puedes poner una imagen de fondo desde el USS) -->
     <ui:VisualElement name="root" class="root">
@@ -9,9 +9,9 @@
 
         <!-- Zona del título -->
         <ui:VisualElement name="title-container" class="title-container">
-            <ui:Label name="title" text="MOONVEIL" class="title" />
+            <ui:VisualElement name="title" class="title-logo" />
             <ui:VisualElement name="title-line" class="title-line" />
-            <ui:Label name="subtitle" text="Tras el velo de la luna" class="subtitle" />
+            <ui:Label name="subtitle" class="subtitle" />
         </ui:VisualElement>
 
         <!-- Botones -->

@@ -14,13 +14,18 @@
 .root {
     flex-grow: 1;
     background-color: var(--color-bg);
-    /* Descomenta y cambia la ruta para poner un fondo propio:
-    background-image: url('project://database/Assets/UI/Images/background.png');
-    -unity-background-scale-mode: scale-and-crop; */
     align-items: center;
     justify-content: center;
+    background-image: url('project://database/Assets/Resources/Images/background.png');
+    -unity-background-scale-mode: scale-and-crop;
+    opacity: 0;
+    /*transition-property: var();*/
+    transition-duration: 1.5s;
 }
 
+.root--visible {
+    opacity: 1;
+}
 /* ============ LUNA DECORATIVA ============ */
 .moon {
     position: absolute;
@@ -50,6 +55,13 @@
     text-shadow: 0 0 18px rgba(140, 160, 255, 0.9);
 }
 
+.title-logo {
+    width: 760px;
+    height: 318px;
+    background-image: url('project://database/Assets/Resources/Images/logo_moonveil.png');
+    -unity-background-scale-mode: scale-to-fit;
+}
+
 .title-line {
     width: 420px;
     height: 3px;
@@ -60,7 +72,7 @@
 
 .subtitle {
     margin-top: 14px;
-    font-size: 20px;
+    font-size: 50px;
     letter-spacing: 6px;
     color: var(--color-accent);
     -unity-font-style: italic;
@@ -85,8 +97,6 @@
     border-width: 2px;
     border-color: rgba(140, 160, 255, 0.4);
     border-radius: 32px;
-
-    transition-property: scale, background-color, border-color, color;
     transition-duration: 0.2s;
     transition-timing-function: ease-out;
 }
@@ -110,6 +120,10 @@
 .menu-button--quit:hover {
     border-color: var(--color-danger);
     color: var(--color-danger);
+}
+
+.title, .subtitle, .menu-button {
+    -unity-font-definition: url('project://database/Assets/UI/Fonts/Cinzel SDF.asset');
 }
 
 /* ============ VERSIÓN ============ */

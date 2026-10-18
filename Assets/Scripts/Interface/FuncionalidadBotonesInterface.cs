@@ -1,11 +1,10 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 [RequireComponent(typeof(PanelRenderer))]
-public class MainMenuPanelController : MonoBehaviour
+public class FuncionalidadBotonesInterface : MonoBehaviour
 {
-    [SerializeField] private string gameSceneName;
+    [SerializeField] private string gameSceneName; //Para el boton de jugar (PROX)
 
     private void Awake() //Hace que se ejecute solo una vez cuando se le llama.
     {
@@ -18,11 +17,13 @@ public class MainMenuPanelController : MonoBehaviour
         GetComponent<PanelRenderer>().UnregisterUIReloadCallback(cargarBotones); //Hace que no se pueda volver a llamada al metodo cargarBotones();
     }
     
-    private void cargarBotones(PanelRenderer panelRenderer, VisualElement root, int version)
+    private void cargarBotones(PanelRenderer panelRenderer, VisualElement root)
     {
-        root.Q<Button>("btn-play").clicked     += () => /*SceneManager.LoadScene(gameSceneName);*/ Debug.Log("Proximamente");
-        root.Q<Button>("btn-settings").clicked += () => Debug.Log("Proximamente");
+        root.Q<Button>("btn-play").clicked     += () => /*SceneManager.LoadScene(gameSceneName);*/ Debug.Log("Proximamente"); //TODO
+        root.Q<Button>("btn-settings").clicked += () => Debug.Log("Proximamente"); //TODO
         root.Q<Button>("btn-quit").clicked     += salirJuego;
+        VisualElement fondo = root.Q<VisualElement>("root"); 
+        fondo.schedule.Execute(() => fondo.AddToClassList("root--visible")).StartingIn(100); //Se retrasa 100ms para que haga bien la animación.
     }
 
     private void salirJuego()
