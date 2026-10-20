@@ -1,0 +1,430 @@
+{
+ "props": [
+  {
+   "kind": "Barrels",
+   "group": "Storage",
+   "variant": 1,
+   "condition": "New",
+   "file": "barrels/barrels_1_new.png",
+   "pivot": {
+    "small": {
+     "x": 13,
+     "y": 11
+    },
+    "large": {
+     "x": 22,
+     "y": 19
+    }
+   }
+  },
+  {
+   "kind": "Crates",
+   "group": "Storage",
+   "variant": 1,
+   "condition": "New",
+   "file": "crates/crates_1_new.png",
+   "pivot": {
+    "small": {
+     "x": 9,
+     "y": 16
+    },
+    "large": {
+     "x": 17,
+     "y": 29
+    }
+   }
+  },
+  {
+   "kind": "Hay",
+   "group": "Storage",
+   "variant": 1,
+   "condition": "New",
+   "file": "hay/hay_1_new.png",
+   "pivot": {
+    "small": {
+     "x": 14,
+     "y": 13
+    },
+    "large": {
+     "x": 25,
+     "y": 24
+    }
+   }
+  },
+  {
+   "kind": "Wheelbarrow",
+   "group": "Farm",
+   "variant": 1,
+   "condition": "New",
+   "file": "wheelbarrow/wheelbarrow_1_new.png",
+   "pivot": {
+    "small": {
+     "x": 11,
+     "y": 12
+    },
+    "large": {
+     "x": 18,
+     "y": 22
+    }
+   }
+  },
+  {
+   "kind": "Bench",
+   "group": "Village",
+   "variant": 1,
+   "condition": "New",
+   "file": "bench/bench_1_new.png",
+   "pivot": {
+    "small": {
+     "x": 9,
+     "y": 12
+    },
+    "large": {
+     "x": 16,
+     "y": 22
+    }
+   }
+  },
+  {
+   "kind": "Signpost",
+   "group": "Village",
+   "variant": 1,
+   "condition": "New",
+   "file": "signpost/signpost_1_new.png",
+   "pivot": {
+    "small": {
+     "x": 8,
+     "y": 19
+    },
+    "large": {
+     "x": 14,
+     "y": 35
+    }
+   }
+  },
+  {
+   "kind": "Lamp post",
+   "group": "Village",
+   "variant": 1,
+   "condition": "New",
+   "file": "lamp_post/lamp_post_1_new.png",
+   "pivot": {
+    "small": {
+     "x": 5,
+     "y": 19
+    },
+    "large": {
+     "x": 8,
+     "y": 36
+    }
+   }
+  },
+  {
+   "kind": "Baskets",
+   "group": "Storage",
+   "variant": 1,
+   "condition": "New",
+   "file": "baskets/baskets_1_new.png",
+   "pivot": {
+    "small": {
+     "x": 9,
+     "y": 10
+    },
+    "large": {
+     "x": 14,
+     "y": 18
+    }
+   }
+  }
+ ],
+ "fences": [
+  {
+   "style": "Picket",
+   "piece": "post",
+   "condition": "New",
+   "file": "picket/picket_post_new.png",
+   "pivot": {
+    "small": {
+     "x": 23,
+     "y": 29
+    },
+    "large": {
+     "x": 44,
+     "y": 57
+    }
+   }
+  },
+  {
+   "style": "Picket",
+   "piece": "ne",
+   "condition": "New",
+   "file": "picket/picket_ne_new.png",
+   "pivot": {
+    "small": {
+     "x": 23,
+     "y": 29
+    },
+    "large": {
+     "x": 44,
+     "y": 57
+    }
+   }
+  },
+  {
+   "style": "Picket",
+   "piece": "se",
+   "condition": "New",
+   "file": "picket/picket_se_new.png",
+   "pivot": {
+    "small": {
+     "x": 23,
+     "y": 29
+    },
+    "large": {
+     "x": 44,
+     "y": 57
+    }
+   }
+  },
+  {
+   "style": "Picket",
+   "piece": "ne_se",
+   "condition": "New",
+   "file": "picket/picket_ne_se_new.png",
+   "pivot": {
+    "small": {
+     "x": 23,
+     "y": 29
+    },
+    "large": {
+     "x": 44,
+     "y": 57
+    }
+   }
+  },
+  {
+   "style": "Picket",
+   "piece": "sw",
+   "condition": "New",
+   "file": "picket/picket_sw_new.png",
+   "pivot": {
+    "small": {
+     "x": 23,
+     "y": 29
+    },
+    "large": {
+     "x": 44,
+     "y": 57
+    }
+   }
+  },
+  {
+   "style": "Picket",
+   "piece": "ne_sw",
+   "condition": "New",
+   "file": "picket/picket_ne_sw_new.png",
+   "pivot": {
+    "small": {
+     "x": 23,
+     "y": 29
+    },
+    "large": {
+     "x": 44,
+     "y": 57
+    }
+   }
+  },
+  {
+   "style": "Picket",
+   "piece": "se_sw",
+   "condition": "New",
+   "file": "picket/picket_se_sw_new.png",
+   "pivot": {
+    "small": {
+     "x": 23,
+     "y": 29
+    },
+    "large": {
+     "x": 44,
+     "y": 57
+    }
+   }
+  },
+  {
+   "style": "Picket",
+   "piece": "ne_se_sw",
+   "condition": "New",
+   "file": "picket/picket_ne_se_sw_new.png",
+   "pivot": {
+    "small": {
+     "x": 23,
+     "y": 29
+    },
+    "large": {
+     "x": 44,
+     "y": 57
+    }
+   }
+  },
+  {
+   "style": "Picket",
+   "piece": "nw",
+   "condition": "New",
+   "file": "picket/picket_nw_new.png",
+   "pivot": {
+    "small": {
+     "x": 23,
+     "y": 29
+    },
+    "large": {
+     "x": 44,
+     "y": 57
+    }
+   }
+  },
+  {
+   "style": "Picket",
+   "piece": "ne_nw",
+   "condition": "New",
+   "file": "picket/picket_ne_nw_new.png",
+   "pivot": {
+    "small": {
+     "x": 23,
+     "y": 29
+    },
+    "large": {
+     "x": 44,
+     "y": 57
+    }
+   }
+  },
+  {
+   "style": "Picket",
+   "piece": "se_nw",
+   "condition": "New",
+   "file": "picket/picket_se_nw_new.png",
+   "pivot": {
+    "small": {
+     "x": 23,
+     "y": 29
+    },
+    "large": {
+     "x": 44,
+     "y": 57
+    }
+   }
+  },
+  {
+   "style": "Picket",
+   "piece": "ne_se_nw",
+   "condition": "New",
+   "file": "picket/picket_ne_se_nw_new.png",
+   "pivot": {
+    "small": {
+     "x": 23,
+     "y": 29
+    },
+    "large": {
+     "x": 44,
+     "y": 57
+    }
+   }
+  },
+  {
+   "style": "Picket",
+   "piece": "sw_nw",
+   "condition": "New",
+   "file": "picket/picket_sw_nw_new.png",
+   "pivot": {
+    "small": {
+     "x": 23,
+     "y": 29
+    },
+    "large": {
+     "x": 44,
+     "y": 57
+    }
+   }
+  },
+  {
+   "style": "Picket",
+   "piece": "ne_sw_nw",
+   "condition": "New",
+   "file": "picket/picket_ne_sw_nw_new.png",
+   "pivot": {
+    "small": {
+     "x": 23,
+     "y": 29
+    },
+    "large": {
+     "x": 44,
+     "y": 57
+    }
+   }
+  },
+  {
+   "style": "Picket",
+   "piece": "se_sw_nw",
+   "condition": "New",
+   "file": "picket/picket_se_sw_nw_new.png",
+   "pivot": {
+    "small": {
+     "x": 23,
+     "y": 29
+    },
+    "large": {
+     "x": 44,
+     "y": 57
+    }
+   }
+  },
+  {
+   "style": "Picket",
+   "piece": "ne_se_sw_nw",
+   "condition": "New",
+   "file": "picket/picket_ne_se_sw_nw_new.png",
+   "pivot": {
+    "small": {
+     "x": 23,
+     "y": 29
+    },
+    "large": {
+     "x": 44,
+     "y": 57
+    }
+   }
+  },
+  {
+   "style": "Picket",
+   "piece": "gate_se_nw",
+   "condition": "New",
+   "file": "picket/picket_gate_se_nw_new.png",
+   "pivot": {
+    "small": {
+     "x": 23,
+     "y": 29
+    },
+    "large": {
+     "x": 44,
+     "y": 57
+    }
+   }
+  },
+  {
+   "style": "Picket",
+   "piece": "gate_ne_sw",
+   "condition": "New",
+   "file": "picket/picket_gate_ne_sw_new.png",
+   "pivot": {
+    "small": {
+     "x": 23,
+     "y": 29
+    },
+    "large": {
+     "x": 44,
+     "y": 57
+    }
+   }
+  }
+ ]
+}
