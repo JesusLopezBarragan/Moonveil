@@ -429418,7 +429418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b222c43f5f6c034daeb8f679d09fa5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
-  target: {fileID: 1102653178}
+  target: {fileID: 0}
   smoothTime: 0.15
   offset: {x: 0, y: 0, z: -10}
 --- !u!1 &584823042
@@ -432360,6 +432360,7 @@ GameObject:
   - component: {fileID: 1102653177}
   - component: {fileID: 1102653180}
   - component: {fileID: 1102653179}
+  - component: {fileID: 1102653181}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -432454,7 +432455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1836770a58b7c345b7dd654e305a7bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  moveSpeed: 6
+  velocidad: 6
 --- !u!50 &1102653180
 Rigidbody2D:
   serializedVersion: 5
@@ -432482,6 +432483,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1102653181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102653176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4aad2d2b09fa943a71e5dcaf1c9a7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSprint
+  multiplicadorSprint: 1.6
+  duracionSprint: 5
+  cooldownSprint: 5
+  esprintando: 0
 --- !u!1 &1835046719
 GameObject:
   m_ObjectHideFlags: 0
