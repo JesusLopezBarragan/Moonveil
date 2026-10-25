@@ -235,7 +235,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97b6cf5fed8e0a340b7385ec585afb2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FuncionalidadBotonesInterface
-  gameSceneName: 
+  SceneVideojuego: SampleScene
+  menuConfiguracion: {fileID: 9197481963319205126, guid: 4e0207d436714ed40826d090dc890ce3, type: 3}
 --- !u!1 &1911997059
 GameObject:
   m_ObjectHideFlags: 0
