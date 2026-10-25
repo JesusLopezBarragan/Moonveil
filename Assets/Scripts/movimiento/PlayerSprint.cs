@@ -5,15 +5,17 @@ using UnityEngine.InputSystem;
 public class PlayerSprint : MonoBehaviour
 {
     [SerializeField] private float multiplicadorSprint = 1.6f;
-    [SerializeField] private float duracionSprint = 5f;
-    [SerializeField] private float cooldownSprint = 5f;
+    [SerializeField] private float estaminaMaxima = 30f;
+    [SerializeField] private float velocidadGasto = 10f;    // estamina por segundo gastando
+    [SerializeField] private float tiempoEsperaRecarga = 5f;
+    [SerializeField] private float velocidadRecarga = 10f;  // estamina por segundo recargando
 
     private PlayerMovement movimiento;
     private InputAction accionSprint;
 
     private float velocidadBase;
-    private float timerSprint;
-    private float timerCooldown;
+    private float estaminaActual;
+    private float timerEspera;
     public bool esprintando = false;
 
     private void Awake()
@@ -30,36 +32,40 @@ public class PlayerSprint : MonoBehaviour
     private void Start()
     {
         velocidadBase = movimiento.Velocidad;
+        estaminaActual = estaminaMaxima;
     }
 
     private void Update()
     {
-        if (esprintando)
+        bool shiftPulsado = accionSprint.IsPressed();
+
+        if (shiftPulsado && estaminaActual > 0f)
         {
-            timerSprint -= Time.deltaTime;
-            if (timerSprint <= 0f)
-            {
-                PararSprint();
-            }
+            // Esprintar
+            esprintando = true;
+            estaminaActual -= velocidadGasto * Time.deltaTime;
+            timerEspera = tiempoEsperaRecarga;
+            movimiento.Velocidad = velocidadBase * multiplicadorSprint;
+
+            if (estaminaActual < 0f) estaminaActual = 0f;
         }
         else
         {
-            if (timerCooldown > 0f) timerCooldown -= Time.deltaTime;
-            if (accionSprint.WasPressedThisFrame() && timerCooldown <= 0f) EmpezarSprint();
+            // Parar sprint
+            esprintando = false;
+            movimiento.Velocidad = velocidadBase;
+
+            // Esperar antes de recargar
+            if (timerEspera > 0f)
+            {
+                timerEspera -= Time.deltaTime;
+            }
+            else
+            {
+                // Recargar estamina
+                estaminaActual += velocidadRecarga * Time.deltaTime;
+                if (estaminaActual > estaminaMaxima) estaminaActual = estaminaMaxima;
+            }
         }
-    }
-
-    private void EmpezarSprint()
-    {
-        esprintando = true;
-        timerSprint = duracionSprint;
-        movimiento.Velocidad = velocidadBase * multiplicadorSprint;
-    }
-
-    private void PararSprint()
-    {
-        esprintando = false;
-        timerCooldown = cooldownSprint;
-        movimiento.Velocidad = velocidadBase;
     }
 }
