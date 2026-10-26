@@ -122,10 +122,6 @@
     color: var(--color-danger);
 }
 
-.title, .subtitle, .menu-button {
-    -unity-font-definition: url('project://database/Assets/UI/Fonts/Cinzel SDF.asset');
-}
-
 /* ============ VERSIÓN ============ */
 .version {
     position: absolute;

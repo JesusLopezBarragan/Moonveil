@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="false"> <!--Aquí se indica el entorno en el que va a trabajar este archivo. -->
+    <Style src="MenuConfigurer.uss" />
+    <!-- Contenedor a pantalla completa (aquí puedes poner una imagen de fondo desde el USS) -->
+    <ui:VisualElement name="root" class="root">
+
+        <!-- Panel de configuración (oculto al empezar) -->
+        <ui:VisualElement name="settings-panel" class="settings-panel" style="display: none;">
+            <ui:Slider name="slider-volume" label="VOLUMEN" low-value="0" high-value="1" value="1" class="settings-row" />
+            <ui:Toggle name="toggle-fullscreen" label="PANTALLA COMPLETA" class="settings-row" />
+            <ui:Button name="btn-back" text="VOLVER" class="menu-button" />
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>
