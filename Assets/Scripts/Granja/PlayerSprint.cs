@@ -68,4 +68,9 @@ public class PlayerSprint : MonoBehaviour
             }
         }
     }
+
+    public float PorcentajeEstamina()
+    {
+        return estaminaActual / estaminaMaxima;
+    }
 }
