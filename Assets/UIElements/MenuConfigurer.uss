@@ -1,0 +1,14 @@
+.settings-panel {
+    align-items: center;
+    width: 520px;
+}
+
+.settings-row {
+    width: 100%;
+    margin: 12px 0;
+}
+
+.settings-row .unity-base-field__label {
+    color: var(--color-text);
+    min-width: 220px;
+}
