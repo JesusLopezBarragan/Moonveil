@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 using UnityEngine.InputSystem;
 
 // Mueve al jugador con WASD o las flechas y cambia su sprite para animarlo.
@@ -88,3 +88,4 @@ public class MovimientoJugador : MonoBehaviour
         rb.linearVelocity = movimiento * velocidad;
     }
 }
+*/

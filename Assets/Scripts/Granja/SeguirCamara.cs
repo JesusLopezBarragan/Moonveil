@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 
 // La cámara sigue al jugador de forma suave sin salirse del mapa.
 public class SeguirCamara : MonoBehaviour
@@ -22,3 +22,4 @@ public class SeguirCamara : MonoBehaviour
         transform.position = Vector3.Lerp(transform.position, destino, suavizado * Time.deltaTime);
     }
 }
+*/
