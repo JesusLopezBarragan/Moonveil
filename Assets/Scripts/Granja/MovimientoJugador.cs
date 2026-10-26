@@ -13,6 +13,10 @@ public class MovimientoJugador : MonoBehaviour
 
     public float tiempoEntrePasos = 0.15f;
 
+    // NUEVO (herramientas): hacia dónde mira el jugador y si puede moverse
+    public Vector2 direccion = Vector2.down;
+    public bool bloqueado = false;   // true mientras usa una herramienta
+
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private Vector2 movimiento;
@@ -40,27 +44,32 @@ public class MovimientoJugador : MonoBehaviour
             if (teclado.sKey.isPressed || teclado.downArrowKey.isPressed) movimiento.y -= 1;
         }
         movimiento = movimiento.normalized; // para no ir más rápido en diagonal
+        if (bloqueado) movimiento = Vector2.zero; // NUEVO: quieto mientras usa una herramienta
 
         // 2. Elegir los sprites según la dirección
         if (movimiento.x > 0)
         {
             spritesActuales = spritesLado;
             sr.flipX = true; // el sprite mira a la izquierda, lo damos la vuelta
+            direccion = Vector2.right;
         }
         else if (movimiento.x < 0)
         {
             spritesActuales = spritesLado;
             sr.flipX = false;
+            direccion = Vector2.left;
         }
         else if (movimiento.y > 0)
         {
             spritesActuales = spritesArriba;
             sr.flipX = false;
+            direccion = Vector2.up;
         }
         else if (movimiento.y < 0)
         {
             spritesActuales = spritesAbajo;
             sr.flipX = false;
+            direccion = Vector2.down;
         }
 
         // 3. Animación: si se mueve, alterna entre el paso 1 y el paso 2
