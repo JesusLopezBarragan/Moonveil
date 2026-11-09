@@ -18,7 +18,7 @@ public class UsarHerramienta : MonoBehaviour
     public Color colorMojado = new Color(0.65f, 0.55f, 0.5f);
 
     private InventarioHerramientas inventario;
-    private MovimientoJugador movimiento;
+    private PlayerMovement movimiento;
     private Collider2D colliderJugador;
     private SpriteRenderer srJugador;
 
@@ -32,7 +32,7 @@ public class UsarHerramienta : MonoBehaviour
     void Start()
     {
         inventario = GetComponent<InventarioHerramientas>();
-        movimiento = GetComponent<MovimientoJugador>();
+        movimiento = GetComponent<PlayerMovement>();
         colliderJugador = GetComponent<Collider2D>();
         srJugador = GetComponent<SpriteRenderer>();
 

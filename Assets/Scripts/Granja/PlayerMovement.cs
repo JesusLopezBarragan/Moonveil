@@ -10,6 +10,9 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 inputMovimiento;
     private InputAction accionMovimiento;
 
+    [HideInInspector] public Vector2 direccion = Vector2.down;
+    [HideInInspector] public bool bloqueado = false;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -30,11 +33,15 @@ public class PlayerMovement : MonoBehaviour
     private void OnEnable() => accionMovimiento.Enable();
     private void OnDisable() => accionMovimiento.Disable();
 
+
     private void Update()
     {
-        inputMovimiento = accionMovimiento.ReadValue<Vector2>();
-    }
+    inputMovimiento = accionMovimiento.ReadValue<Vector2>();
+    if (bloqueado) inputMovimiento = Vector2.zero;
 
+    if (inputMovimiento != Vector2.zero)
+        direccion = inputMovimiento.normalized;
+    }
     private void FixedUpdate()
     {
         rb.linearVelocity = inputMovimiento.normalized * velocidad;
