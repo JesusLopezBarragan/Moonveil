@@ -28,14 +28,15 @@ public class FuncionalidadBotonesInterface : MonoBehaviour
             vistaMenuPrincipal.AddToClassList("root--visible"); //Muestra el menu (En este momento Opacity = 1)
         }
 
-        root.Q<Button>("btn-play").clicked += () => cargarJuego();
+        root.Q<Button>("btn-play").clicked += () => cargarJuego(root);
         root.Q<Button>("btn-settings").clicked += () => mostrarConfiguracion(root);
         root.Q<Button>("btn-quit").clicked     += salirJuego;
     }
 
-    private void cargarJuego()
+    private void cargarJuego(VisualElement root)
     {
-        SceneManager.LoadScene(SceneVideojuego);
+        root.style.display = DisplayStyle.None; //Escondemos el menú.
+        PantallaCarga.Empezar(SceneVideojuego); //La pantalla de carga se encarga de cargar la escena del juego.
     }
 
     private void mostrarConfiguracion(VisualElement root)

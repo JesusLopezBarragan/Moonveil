@@ -72,4 +72,19 @@ public class Inventario : MonoBehaviour
         }
         return total;
     }
+
+    // NUEVO (tienda): saca de la mochila todos los objetos de un tipo y devuelve cuántos había
+    public int QuitarTodos(string nombre)
+    {
+        int total = 0;
+        for (int i = 0; i < ranuras.Length; i++)
+        {
+            if (ranuras[i].nombre == nombre)
+            {
+                total += ranuras[i].cantidad;
+                ranuras[i] = new Ranura(); // el hueco se queda vacío
+            }
+        }
+        return total;
+    }
 }

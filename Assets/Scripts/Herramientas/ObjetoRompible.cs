@@ -53,9 +53,10 @@ public class ObjetoRompible : MonoBehaviour
 
     void DarObjeto()
     {
-        if (objetoQueDa != "" && Inventario.instancia != null)
+        if (objetoQueDa != "")
         {
-            Inventario.instancia.Guardar(objetoQueDa, cantidadQueDa);
+            // Los objetos saltan al suelo y luego vuelan hacia el jugador (ObjetoRecogible los guarda en la mochila)
+            ObjetoRecogible.Soltar(objetoQueDa, cantidadQueDa, transform.position + new Vector3(0f, 0.5f, 0f));
         }
     }
 
