@@ -41,6 +41,10 @@
 }
 
 /* ============ TÍTULO ============ */
+.menu-content {
+    align-items: center;
+}
+
 .title-container {
     align-items: center;
     margin-bottom: 70px;
@@ -129,4 +133,231 @@
     right: 18px;
     font-size: 14px;
     color: rgba(225, 230, 255, 0.4);
+}
+
+/* ============ CREACIÓN Y SELECCIÓN DE PERSONAJES ============ */
+.creation-screen {
+    align-self: stretch;
+    flex-grow: 1;
+    width: 100%;
+    padding: 22px 4%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(10, 12, 28, 0.78);
+}
+
+.creation-title {
+    font-size: 34px;
+    letter-spacing: 5px;
+    -unity-font-style: bold;
+    color: var(--color-moon);
+}
+
+.creation-subtitle {
+    margin-top: 5px;
+    margin-bottom: 16px;
+    font-size: 17px;
+    color: var(--color-text);
+}
+
+.creation-layout {
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1280px;
+    min-height: 250px;
+}
+
+.preview-panel,
+.creation-form,
+.presets-panel {
+    padding: 16px;
+    background-color: rgba(25, 30, 65, 0.88);
+    border-width: 2px;
+    border-color: rgba(140, 160, 255, 0.45);
+    border-radius: 12px;
+}
+
+.preview-panel {
+    width: 260px;
+    min-width: 220px;
+    margin-right: 14px;
+    align-items: center;
+    justify-content: center;
+}
+
+.creation-form {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.section-title,
+.field-title {
+    font-size: 17px;
+    letter-spacing: 2px;
+    -unity-font-style: bold;
+    color: var(--color-moon);
+}
+
+.character-preview {
+    width: 74px;
+    height: 118px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+    background-image: url('project://database/Assets/Sprites/Personaje/jugador_abajo_0.png');
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.character-preview--0 {
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+}
+
+.character-preview--1 {
+    -unity-background-image-tint-color: rgb(190, 235, 190);
+}
+
+.character-preview--2 {
+    -unity-background-image-tint-color: rgb(190, 200, 255);
+}
+
+.preview-name {
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: var(--color-text);
+}
+
+.preview-caption,
+.presets-caption,
+.selection-status {
+    font-size: 13px;
+    color: rgba(225, 230, 255, 0.75);
+}
+
+.name-field {
+    margin-top: 14px;
+    margin-bottom: 10px;
+}
+
+.name-field .unity-base-field__label {
+    min-width: 80px;
+    color: var(--color-text);
+}
+
+.name-field .unity-base-text-field__input {
+    color: var(--color-text);
+    background-color: rgba(10, 12, 28, 0.85);
+    border-color: rgba(140, 160, 255, 0.5);
+}
+
+.appearance-options {
+    flex-direction: row;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.appearance-button {
+    min-width: 115px;
+    height: 42px;
+    margin-right: 10px;
+    color: var(--color-text);
+    border-width: 2px;
+    border-color: rgba(220, 228, 255, 0.3);
+    border-radius: 8px;
+    -unity-font-style: bold;
+}
+
+.appearance-button--0 {
+    background-color: rgb(104, 93, 73);
+}
+
+.appearance-button--1 {
+    background-color: rgb(67, 112, 78);
+}
+
+.appearance-button--2 {
+    background-color: rgb(83, 91, 151);
+}
+
+.appearance-button--selected,
+.preset-card--selected {
+    border-color: var(--color-moon);
+    border-width: 3px;
+}
+
+.selection-status {
+    min-height: 18px;
+    margin-top: 5px;
+}
+
+.presets-panel {
+    width: 100%;
+    max-width: 1280px;
+    margin-top: 12px;
+    padding: 12px 16px;
+}
+
+.presets-caption {
+    margin-top: 3px;
+    margin-bottom: 9px;
+}
+
+.preset-grid {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.preset-card {
+    width: 18.5%;
+    min-width: 112px;
+    height: 112px;
+    padding: 7px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(10, 12, 28, 0.7);
+    border-width: 2px;
+    border-color: rgba(140, 160, 255, 0.35);
+    border-radius: 8px;
+}
+
+.preset-card:hover {
+    background-color: rgba(70, 85, 170, 0.65);
+    border-color: var(--color-moon);
+}
+
+.preset-portrait {
+    width: 24px;
+    height: 38px;
+    margin-bottom: 3px;
+    background-image: url('project://database/Assets/Sprites/Personaje/jugador_abajo_0.png');
+    -unity-background-scale-mode: scale-to-fit;
+    -unity-background-image-tint-color: rgb(190, 200, 255);
+}
+
+.preset-name {
+    font-size: 12px;
+    -unity-font-style: bold;
+    color: var(--color-text);
+}
+
+.preset-caption {
+    font-size: 11px;
+    color: rgba(225, 230, 255, 0.65);
+}
+
+.creation-actions {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.creation-actions .menu-button {
+    width: 250px;
+    height: 48px;
+    margin: 0 8px;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+.creation-actions .menu-button--secondary {
+    background-color: rgba(25, 30, 65, 0.75);
 }
