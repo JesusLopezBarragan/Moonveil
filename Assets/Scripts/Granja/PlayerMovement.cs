@@ -30,6 +30,11 @@ public class PlayerMovement : MonoBehaviour
     private void OnEnable() => accionMovimiento.Enable();
     private void OnDisable() => accionMovimiento.Disable();
 
+    private void Start()
+    {
+        aplicarAspectoSeleccionado();
+    }
+
     private void Update()
     {
         inputMovimiento = accionMovimiento.ReadValue<Vector2>();
@@ -38,6 +43,30 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.linearVelocity = inputMovimiento.normalized * velocidad;
+    }
+
+    private void aplicarAspectoSeleccionado()
+    {
+        // El sprite visual es opcional; sin SpriteRenderer no hay nada que tintar.
+        SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+        if (sprite == null)
+        {
+            return;
+        }
+
+        // El orden debe coincidir con Natural, Bosque y Luna en el menu de creacion.
+        Color[] coloresAspecto =
+        {
+            Color.white,
+            new Color(0.75f, 0.92f, 0.75f),
+            new Color(0.76f, 0.8f, 1f)
+        };
+        // Natural es el valor por defecto; Clamp protege ante indices guardados invalidos.
+        int indiceAspecto = Mathf.Clamp(
+            PlayerPrefs.GetInt("moonveil_personaje_aspecto", 0),
+            0,
+            coloresAspecto.Length - 1);
+        sprite.color = coloresAspecto[indiceAspecto];
     }
 
     public float Velocidad
