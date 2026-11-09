@@ -11,6 +11,8 @@ public class InventarioHerramientas : MonoBehaviour
 
     void Update()
     {
+        if (Time.timeScale == 0f) return; // el juego está en pausa: no se hace nada
+
         // 1. Teclas numéricas: cada número elige una casilla de la barra
         Keyboard teclado = Keyboard.current;
         if (teclado != null)

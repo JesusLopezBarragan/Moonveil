@@ -41,6 +41,8 @@ public class Mina : MonoBehaviour
 
     void Update()
     {
+        if (Time.timeScale == 0f) return; // el juego está en pausa: no se hace nada
+
         // El cartel con el nivel solo se ve si el jugador está dentro de la mina
         bool dentro = Vector3.Distance(jugador.position, centroSala) < 12f;
         cartelNivel.SetActive(dentro);

@@ -43,6 +43,8 @@ public class InterfazAyuda : MonoBehaviour
 
     void Update()
     {
+        if (Time.timeScale == 0f) return; // el juego está en pausa: no se hace nada
+
         // Al pulsar P: si está cerrado se abre y si está abierto se cierra
         if (Keyboard.current.pKey.wasPressedThisFrame)
         {

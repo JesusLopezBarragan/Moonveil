@@ -209,7 +209,8 @@ public class FuncionalidadBotonesInterface : MonoBehaviour
         PlayerPrefs.SetInt(CLAVE_ASPECTO_PERSONAJE, aspectoSeleccionado);
         PlayerPrefs.SetInt(CLAVE_PERSONAJE_PREDETERMINADO, personajePredeterminado);
         PlayerPrefs.Save();
-        SceneManager.LoadScene(SceneVideojuego);
+        vistaMenuPrincipal.style.display = DisplayStyle.None; //Escondemos el menú.
+        PantallaCarga.Empezar(SceneVideojuego); //La pantalla de carga se encarga de cargar la escena del juego.
     }
 
     private void mostrarConfiguracion(VisualElement root)

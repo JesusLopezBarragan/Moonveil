@@ -51,6 +51,8 @@ public class UsarHerramienta : MonoBehaviour
 
     void Update()
     {
+        if (Time.timeScale == 0f) return; // el juego está en pausa: no se hace nada
+
         Vector3Int casilla = CasillaObjetivo();
 
         // 1. Mover el selector a la casilla y pintarlo blanco (se puede) o rojo (no se puede)

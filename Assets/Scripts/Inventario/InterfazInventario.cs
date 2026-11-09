@@ -41,6 +41,8 @@ public class InterfazInventario : MonoBehaviour
 
     void Update()
     {
+        if (Time.timeScale == 0f) return; // el juego está en pausa: no se hace nada
+
         // 1. Abrir / cerrar con I o Tab
         Keyboard teclado = Keyboard.current;
         if (teclado != null && (teclado.iKey.wasPressedThisFrame || teclado.tabKey.wasPressedThisFrame))

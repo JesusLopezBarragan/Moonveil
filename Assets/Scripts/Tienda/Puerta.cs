@@ -35,6 +35,8 @@ public class Puerta : MonoBehaviour
 
     void Update()
     {
+        if (Time.timeScale == 0f) return; // el juego está en pausa: no se hace nada
+
         aviso.SetActive(jugadorCerca);
 
         if (jugadorCerca && Keyboard.current.eKey.wasPressedThisFrame)

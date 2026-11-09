@@ -98,6 +98,9 @@ public class PauseMenuController : MonoBehaviour
 
     private void Update()
     {
+        // Si se está hablando con el vendedor, Esc solo cierra la conversación (no pausa)
+        if (Vendedor.conversacionAbierta) return;
+
         if (accionPausa != null && accionPausa.WasPressedThisFrame())
         {
             alternarPausa();

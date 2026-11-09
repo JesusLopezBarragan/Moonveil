@@ -4,8 +4,14 @@ using UnityEngine.UI;
 
 // El vendedor de la tienda. Si te acercas y pulsas E te habla,
 // y si vuelves a pulsar E te compra las zanahorias, la piedra y los minerales de la mochila.
+// DefaultExecutionOrder(10): su Update va después del menú de pausa, así la pausa todavía
+// ve la conversación abierta en el mismo frame en que se pulsa Esc para cerrarla.
+[DefaultExecutionOrder(10)]
 public class Vendedor : MonoBehaviour
 {
+    // static: el menú de pausa lo mira para no abrirse con Esc mientras se habla
+    public static bool conversacionAbierta = false;
+
     public string nombre = "Tomás";
     // Lo que compra y cuántas monedas da por cada uno (misma posición en los dos arrays)
     private string[] productos = { "Zanahoria", "Piedra", "Cobre", "Hierro", "Oro" };
@@ -25,6 +31,8 @@ public class Vendedor : MonoBehaviour
 
     void Update()
     {
+        if (Time.timeScale == 0f) return; // el juego está en pausa: no se hace nada
+
         // El aviso solo se ve si estás cerca y todavía no estás hablando
         aviso.SetActive(jugadorCerca && !hablando);
 
@@ -47,6 +55,7 @@ public class Vendedor : MonoBehaviour
     void Saludar()
     {
         hablando = true;
+        conversacionAbierta = true;
         ventana.SetActive(true);
 
         // Montamos la lista de precios y calculamos cuánto vale lo que llevamos
@@ -93,6 +102,7 @@ public class Vendedor : MonoBehaviour
     void Cerrar()
     {
         hablando = false;
+        conversacionAbierta = false;
         ventana.SetActive(false);
     }
 
