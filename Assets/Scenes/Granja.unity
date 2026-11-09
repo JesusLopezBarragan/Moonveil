@@ -58317,6 +58317,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8936648614425105196, guid: f8bae7c6bc8b543f5b3c73986fc45f40, type: 3}
   m_PrefabInstance: {fileID: 1419976888}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2000300000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420931536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 884a196c74c7447684af0995dd52a183, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::PauseMenuController
+  panelSettings: {fileID: 11400000, guid: 7e51fc05664b8ad40a4f64f1c3a4ac71, type: 2}
+  pauseMenu: {fileID: 9197481963319205126, guid: 6d21c08f47c84aa2bc8f578dd47ad901, type: 3}
+  menuConfiguracion: {fileID: 9197481963319205126, guid: 4e0207d436714ed40826d090dc890ce3, type: 3}
+  escenaMenuPrincipal: MenuScene
 --- !u!1 &1420931536
 GameObject:
   m_ObjectHideFlags: 0
@@ -58332,6 +58348,7 @@ GameObject:
   - component: {fileID: 1420931542}
   - component: {fileID: 1420931538}
   - component: {fileID: 1420931544}
+  - component: {fileID: 2000300000}
   m_Layer: 0
   m_Name: Jugador
   m_TagString: Player
