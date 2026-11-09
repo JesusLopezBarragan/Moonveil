@@ -65,14 +65,22 @@ public static class InstaladorHerramientas
         // 5. Decimos qué objetos del mapa se pueden romper, con qué herramienta y qué dan
         MarcarRompibles(escena);
 
-        // 6. Añadimos los nuevos controles al texto de ayuda que ya había
+        // 6. Quitamos el texto de controles de arriba a la izquierda: ahora están en el panel de ayuda (tecla P)
         GameObject objControles = GameObject.Find("TextoControles");
         if (objControles != null)
         {
-            Text texto = objControles.GetComponent<Text>();
-            texto.text += "\nEspacio / Clic: usar herramienta     1-5 / Rueda: cambiar herramienta     I: mochila";
-            texto.verticalOverflow = VerticalWrapMode.Overflow; // la caja era de una línea, así no se corta la segunda
+            Object.Destroy(objControles);
         }
+        new GameObject("InterfazAyuda").AddComponent<InterfazAyuda>();
+
+        // El marcador de zanahorias y monedas (sustituye al texto antiguo de la escena)
+        new GameObject("InterfazContadores").AddComponent<InterfazContadores>();
+
+        // 7. La tienda: el edificio de fuera y la sala de dentro con el vendedor
+        MontarTienda.Montar(escena);
+
+        // 8. La mina, al final del camino de arriba
+        MontarMina.Montar(escena);
     }
 
     // Busca en el tilemap un tile por su nombre (lo usamos para sacar el tile de tierra arada)

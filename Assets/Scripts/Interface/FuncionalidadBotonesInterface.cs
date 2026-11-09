@@ -19,11 +19,17 @@ public class FuncionalidadBotonesInterface : MonoBehaviour
     
     private void cargarBotones(PanelRenderer panelRenderer, VisualElement root)
     {
-        root.Q<Button>("btn-play").clicked     += () => /*SceneManager.LoadScene(gameSceneName);*/ Debug.Log("Proximamente"); //TODO
+        root.Q<Button>("btn-play").clicked     += () => jugar(root);
         root.Q<Button>("btn-settings").clicked += () => Debug.Log("Proximamente"); //TODO
         root.Q<Button>("btn-quit").clicked     += salirJuego;
         VisualElement fondo = root.Q<VisualElement>("root"); 
         fondo.schedule.Execute(() => fondo.AddToClassList("root--visible")).StartingIn(100); //Se retrasa 100ms para que haga bien la animación.
+    }
+
+    private void jugar(VisualElement root)
+    {
+        root.style.display = DisplayStyle.None; //Escondemos el menú.
+        PantallaCarga.Empezar("Granja"); //La pantalla de carga se encarga de cargar la granja.
     }
 
     private void salirJuego()

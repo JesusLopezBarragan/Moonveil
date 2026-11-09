@@ -61,7 +61,7 @@ public class Cultivo : MonoBehaviour
         {
             ControladorJuego.zanahorias++;
             ControladorJuego.semillas++;  // NUEVO: al cosechar recuperamos una semilla
-            if (Inventario.instancia != null) Inventario.instancia.Guardar("Zanahoria", 1); // NUEVO: va a la mochila
+            ObjetoRecogible.Soltar("Zanahoria", 1, transform.position + new Vector3(0f, 0.3f, 0f)); // NUEVO: salta y vuela a la mochila
             faseActual = 0;           // se vuelve a plantar
             sr.sprite = fases[0];
         }
