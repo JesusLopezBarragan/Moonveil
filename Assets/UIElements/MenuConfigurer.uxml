@@ -3,9 +3,12 @@
     <!-- Contenedor a pantalla completa (aquí puedes poner una imagen de fondo desde el USS) -->
     <ui:VisualElement name="root" class="root">
 
-        <!-- Panel de configuración (oculto al empezar) -->
+        <!-- Panel de configuración -->
         <ui:VisualElement name="settings-panel" class="settings-panel" style="display: none;">
+            <ui:Label text="CONFIGURACIÓN" class="settings-title" />
             <ui:Slider name="slider-volume" label="VOLUMEN" low-value="0" high-value="1" value="1" class="settings-row" />
+            <ui:DropdownField name="dropdown-resolution" label="RESOLUCIÓN" class="settings-row" />
+            <ui:DropdownField name="dropdown-fps" label="LÍMITE DE FPS" class="settings-row" />
             <ui:Toggle name="toggle-fullscreen" label="PANTALLA COMPLETA" class="settings-row" />
             <ui:Button name="btn-back" text="VOLVER" class="menu-button" />
         </ui:VisualElement>

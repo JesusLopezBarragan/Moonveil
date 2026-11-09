@@ -7,22 +7,87 @@
         <!-- Luna decorativa -->
         <ui:VisualElement name="moon" class="moon" picking-mode="Ignore" />
 
-        <!-- Zona del título -->
-        <ui:VisualElement name="title-container" class="title-container">
-            <ui:VisualElement name="title" class="title-logo" />
-            <ui:VisualElement name="title-line" class="title-line" />
-            <ui:Label name="subtitle" class="subtitle" />
+        <ui:VisualElement name="menu-content" class="menu-content">
+            <!-- Zona del título -->
+            <ui:VisualElement name="title-container" class="title-container">
+                <ui:VisualElement name="title" class="title-logo" />
+                <ui:VisualElement name="title-line" class="title-line" />
+                <ui:Label name="subtitle" class="subtitle" />
+            </ui:VisualElement>
+
+            <!-- Botones -->
+            <ui:VisualElement name="menu-buttons" class="menu-buttons">
+                <ui:Button name="btn-play" text="JUGAR" class="menu-button" />
+                <ui:Button name="btn-settings" text="CONFIGURACIÓN" class="menu-button" />
+                <ui:Button name="btn-quit" text="SALIR" class="menu-button menu-button--quit" />
+            </ui:VisualElement>
+
+            <!-- Versión -->
+            <ui:Label name="version" text="v0.1" class="version" />
         </ui:VisualElement>
 
-        <!-- Botones -->
-        <ui:VisualElement name="menu-buttons" class="menu-buttons">
-            <ui:Button name="btn-play" text="JUGAR" class="menu-button" />
-            <ui:Button name="btn-settings" text="CONFIGURACIÓN" class="menu-button" />
-            <ui:Button name="btn-quit" text="SALIR" class="menu-button menu-button--quit" />
-        </ui:VisualElement>
+        <ui:VisualElement name="creation-screen" class="creation-screen" style="display: none;">
+            <ui:Label text="NUEVA AVENTURA" class="creation-title" />
+            <ui:Label text="Prepara a tu personaje para empezar una nueva vida en Moonveil." class="creation-subtitle" />
 
-        <!-- Versión -->
-        <ui:Label name="version" text="v0.1" class="version" />
+            <ui:VisualElement class="creation-layout">
+                <ui:VisualElement class="preview-panel">
+                    <ui:Label text="VISTA PREVIA" class="section-title" />
+                    <ui:VisualElement name="character-preview" class="character-preview character-preview--0" />
+                    <ui:Label name="preview-name" text="Viajero" class="preview-name" />
+                    <ui:Label name="preview-appearance" text="Apariencia: Natural" class="preview-caption" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="creation-form">
+                    <ui:Label text="Crea tu personaje" class="section-title" />
+                    <ui:TextField name="character-name" label="Nombre" value="Viajero" class="name-field" />
+                    <ui:Label text="Elige un aspecto" class="field-title" />
+                    <ui:VisualElement class="appearance-options">
+                        <ui:Button name="appearance-0" text="Natural" class="appearance-button appearance-button--0 appearance-button--selected" />
+                        <ui:Button name="appearance-1" text="Bosque" class="appearance-button appearance-button--1" />
+                        <ui:Button name="appearance-2" text="Luna" class="appearance-button appearance-button--2" />
+                    </ui:VisualElement>
+                    <ui:Label name="selection-status" text="También puedes elegir una plantilla preparada." class="selection-status" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement class="presets-panel">
+                <ui:Label text="PERSONAJES PREDETERMINADOS" class="section-title" />
+                <ui:Label text="Cinco espacios listos para añadir personajes y sprites más adelante." class="presets-caption" />
+                <ui:VisualElement class="preset-grid">
+                    <ui:Button name="btn-preset-0" class="preset-card">
+                        <ui:VisualElement class="preset-portrait" />
+                        <ui:Label text="PLANTILLA 1" class="preset-name" />
+                        <ui:Label text="Disponible" class="preset-caption" />
+                    </ui:Button>
+                    <ui:Button name="btn-preset-1" class="preset-card">
+                        <ui:VisualElement class="preset-portrait" />
+                        <ui:Label text="PLANTILLA 2" class="preset-name" />
+                        <ui:Label text="Disponible" class="preset-caption" />
+                    </ui:Button>
+                    <ui:Button name="btn-preset-2" class="preset-card">
+                        <ui:VisualElement class="preset-portrait" />
+                        <ui:Label text="PLANTILLA 3" class="preset-name" />
+                        <ui:Label text="Disponible" class="preset-caption" />
+                    </ui:Button>
+                    <ui:Button name="btn-preset-3" class="preset-card">
+                        <ui:VisualElement class="preset-portrait" />
+                        <ui:Label text="PLANTILLA 4" class="preset-name" />
+                        <ui:Label text="Disponible" class="preset-caption" />
+                    </ui:Button>
+                    <ui:Button name="btn-preset-4" class="preset-card">
+                        <ui:VisualElement class="preset-portrait" />
+                        <ui:Label text="PLANTILLA 5" class="preset-name" />
+                        <ui:Label text="Disponible" class="preset-caption" />
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement class="creation-actions">
+                <ui:Button name="btn-cancel-creation" text="VOLVER" class="menu-button menu-button--secondary" />
+                <ui:Button name="btn-create-character" text="EMPEZAR AVENTURA" class="menu-button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
 
     </ui:VisualElement>
 </ui:UXML>

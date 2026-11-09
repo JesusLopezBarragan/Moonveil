@@ -1,14 +1,48 @@
+.root {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(10, 12, 28);
+    background-image: url('project://database/Assets/Resources/Images/background.png');
+    -unity-background-scale-mode: scale-and-crop;
+}
+
 .settings-panel {
     align-items: center;
-    width: 520px;
+    width: 600px;
+    padding: 28px;
+    background-color: rgba(10, 12, 28, 0.9);
+    border-width: 2px;
+    border-color: rgba(140, 160, 255, 0.6);
+    border-radius: 18px;
+}
+
+.settings-title {
+    margin-bottom: 18px;
+    font-size: 32px;
+    -unity-font-style: bold;
+    color: rgb(220, 228, 255);
+    letter-spacing: 4px;
 }
 
 .settings-row {
     width: 100%;
-    margin: 12px 0;
+    margin: 10px 0;
 }
 
 .settings-row .unity-base-field__label {
-    color: var(--color-text);
+    color: rgb(225, 230, 255);
     min-width: 220px;
+}
+
+.menu-button {
+    width: 360px;
+    height: 56px;
+    margin-top: 20px;
+    color: rgb(225, 230, 255);
+    -unity-font-style: bold;
+    background-color: rgba(25, 30, 65, 0.95);
+    border-width: 2px;
+    border-color: rgba(140, 160, 255, 0.6);
+    border-radius: 28px;
 }

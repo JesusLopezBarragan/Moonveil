@@ -57,7 +57,8 @@ public class Cultivo : MonoBehaviour
         }
 
         // Cosechar: solo si está madura y el jugador está cerca
-        if (jugadorCerca && faseActual == fases.Length - 1 && Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame)
+        if (Time.timeScale > 0f && jugadorCerca && faseActual == fases.Length - 1 &&
+            Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame)
         {
             ControladorJuego.zanahorias++;
             ControladorJuego.semillas++;  // NUEVO: al cosechar recuperamos una semilla
