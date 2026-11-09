@@ -9,19 +9,6 @@ public class FuncionalidadBotonesInterface : MonoBehaviour
     [SerializeField] private string SceneVideojuego;
     [SerializeField] private VisualTreeAsset menuConfiguracion;
     private VisualElement vistaMenuPrincipal; // La vista de el archivo uxml de menuprincipal
-    // Referencias a los elementos UXML usados durante la creacion del personaje.
-    private VisualElement contenidoMenu;
-    private VisualElement pantallaCreacion;
-    private VisualElement vistaPreviaPersonaje;
-    private TextField campoNombrePersonaje;
-    private Label nombreVistaPrevia;
-    private Label aspectoVistaPrevia;
-    private Label estadoSeleccion;
-    private Button[] botonesAspecto;
-    private Button[] botonesPredeterminados;
-    // Estos indices se guardan al confirmar; -1 indica que no se usa una plantilla.
-    private int aspectoSeleccionado;
-    private int personajePredeterminado = -1;
     private static readonly Vector2Int[] resoluciones =
     {
         new Vector2Int(1280, 720),
@@ -33,15 +20,10 @@ public class FuncionalidadBotonesInterface : MonoBehaviour
     private const string CLAVE_RESOLUCION = "configuracion_resolucion";
     private const string CLAVE_PANTALLA_COMPLETA = "configuracion_pantalla_completa";
     private const string CLAVE_FPS = "configuracion_fps";
-    private const string CLAVE_NOMBRE_PERSONAJE = "moonveil_personaje_nombre";
-    private const string CLAVE_ASPECTO_PERSONAJE = "moonveil_personaje_aspecto";
-    private const string CLAVE_PERSONAJE_PREDETERMINADO = "moonveil_personaje_predeterminado";
-    private static readonly string[] nombresAspectos = { "Natural", "Bosque", "Luna" };
 
     private void Awake() //Hace que se ejecute solo una vez cuando se le llama.
     {
         aplicarPreferenciasGuardadas();
-        // Espera a que PanelRenderer cree la interfaz antes de buscar los elementos UXML.
         GetComponent<PanelRenderer>().RegisterUIReloadCallback(cargaArchivo); //Hace que el panel se carga junto a los botones.
     }
 
@@ -54,164 +36,18 @@ public class FuncionalidadBotonesInterface : MonoBehaviour
     private void cargaArchivo(PanelRenderer panelRenderer, VisualElement root)
     {
         vistaMenuPrincipal = root.Q<VisualElement>("root");// Se guarda el menú original antes del cambio (En este momento Opacity = 0)
-        if (vistaMenuPrincipal == null)
+        if (vistaMenuPrincipal != null)
         {
-            Debug.LogError("No se ha encontrado el elemento raíz del menú.", this);
-            return;
+            vistaMenuPrincipal.AddToClassList("root--visible"); //Muestra el menu (En este momento Opacity = 1)
         }
 
-        vistaMenuPrincipal.AddToClassList("root--visible"); //Muestra el menu (En este momento Opacity = 1)
-        // Los nombres deben coincidir con los atributos name de MainMenu.uxml.
-        contenidoMenu = vistaMenuPrincipal.Q<VisualElement>("menu-content");
-        pantallaCreacion = vistaMenuPrincipal.Q<VisualElement>("creation-screen");
-        campoNombrePersonaje = vistaMenuPrincipal.Q<TextField>("character-name");
-        vistaPreviaPersonaje = vistaMenuPrincipal.Q<VisualElement>("character-preview");
-        nombreVistaPrevia = vistaMenuPrincipal.Q<Label>("preview-name");
-        aspectoVistaPrevia = vistaMenuPrincipal.Q<Label>("preview-appearance");
-        estadoSeleccion = vistaMenuPrincipal.Q<Label>("selection-status");
-        Button botonJugar = vistaMenuPrincipal.Q<Button>("btn-play");
-        Button botonConfiguracion = vistaMenuPrincipal.Q<Button>("btn-settings");
-        Button botonSalir = vistaMenuPrincipal.Q<Button>("btn-quit");
-
-        if (contenidoMenu == null || pantallaCreacion == null || campoNombrePersonaje == null ||
-            vistaPreviaPersonaje == null || nombreVistaPrevia == null || aspectoVistaPrevia == null ||
-            estadoSeleccion == null || botonJugar == null || botonConfiguracion == null || botonSalir == null)
-        {
-            Debug.LogError("Faltan elementos necesarios en MainMenu.uxml.", this);
-            return;
-        }
-
-        botonJugar.clicked += mostrarCreacionPersonaje;
-        botonConfiguracion.clicked += () => mostrarConfiguracion(root);
-        botonSalir.clicked += salirJuego;
-        configurarCreacionPersonaje();
+        root.Q<Button>("btn-play").clicked += () => cargarJuego();
+        root.Q<Button>("btn-settings").clicked += () => mostrarConfiguracion(root);
+        root.Q<Button>("btn-quit").clicked     += salirJuego;
     }
 
-    private void configurarCreacionPersonaje()
+    private void cargarJuego()
     {
-        botonesAspecto = new Button[nombresAspectos.Length];
-        for (int i = 0; i < botonesAspecto.Length; i++)
-        {
-            // Copia el indice para que cada boton conserve su propia opcion en el callback.
-            int indice = i;
-            botonesAspecto[i] = pantallaCreacion.Q<Button>("appearance-" + indice);
-            if (botonesAspecto[i] == null)
-            {
-                Debug.LogError("Falta el botón para el aspecto " + indice + " en MainMenu.uxml.", this);
-                return;
-            }
-
-            botonesAspecto[i].clicked += () => seleccionarAspecto(indice);
-        }
-
-        botonesPredeterminados = new Button[5];
-        for (int i = 0; i < botonesPredeterminados.Length; i++)
-        {
-            // Las tarjetas se identifican con indices de 0 a 4 en el UXML.
-            int indice = i;
-            botonesPredeterminados[i] = pantallaCreacion.Q<Button>("btn-preset-" + indice);
-            if (botonesPredeterminados[i] == null)
-            {
-                Debug.LogError("Falta el espacio del personaje predeterminado " + indice + " en MainMenu.uxml.", this);
-                return;
-            }
-
-            botonesPredeterminados[i].clicked += () => seleccionarPersonajePredeterminado(indice);
-        }
-
-        campoNombrePersonaje.RegisterValueChangedCallback(_ =>
-        {
-            // Si se cambia el nombre de una plantilla, deja de ser una seleccion predeterminada.
-            personajePredeterminado = -1;
-            foreach (Button boton in botonesPredeterminados)
-            {
-                boton.RemoveFromClassList("preset-card--selected");
-            }
-
-            actualizarVistaPrevia();
-        });
-        Button botonCancelar = pantallaCreacion.Q<Button>("btn-cancel-creation");
-        Button botonCrear = pantallaCreacion.Q<Button>("btn-create-character");
-        if (botonCancelar == null || botonCrear == null)
-        {
-            Debug.LogError("Faltan los botones para volver o empezar en MainMenu.uxml.", this);
-            return;
-        }
-
-        botonCancelar.clicked += volverAlMenu;
-        botonCrear.clicked += confirmarPersonaje;
-        seleccionarAspecto(0);
-        actualizarVistaPrevia();
-    }
-
-    private void mostrarCreacionPersonaje()
-    {
-        // Las dos vistas comparten el mismo arbol; solo se cambia cual esta visible.
-        contenidoMenu.style.display = DisplayStyle.None;
-        pantallaCreacion.style.display = DisplayStyle.Flex;
-        actualizarVistaPrevia();
-    }
-
-    private void volverAlMenu()
-    {
-        pantallaCreacion.style.display = DisplayStyle.None;
-        contenidoMenu.style.display = DisplayStyle.Flex;
-    }
-
-    private void seleccionarAspecto(int indice)
-    {
-        aspectoSeleccionado = indice;
-        for (int i = 0; i < botonesAspecto.Length; i++)
-        {
-            botonesAspecto[i].EnableInClassList("appearance-button--selected", i == indice);
-        }
-
-        // Se deja una sola clase de tono para que USS muestre el color elegido.
-        vistaPreviaPersonaje.RemoveFromClassList("character-preview--0");
-        vistaPreviaPersonaje.RemoveFromClassList("character-preview--1");
-        vistaPreviaPersonaje.RemoveFromClassList("character-preview--2");
-        vistaPreviaPersonaje.AddToClassList("character-preview--" + indice);
-        actualizarVistaPrevia();
-    }
-
-    private void seleccionarPersonajePredeterminado(int indice)
-    {
-        // Cambiar el TextField dispara su callback, por eso guardamos el indice despues.
-        campoNombrePersonaje.value = "Aldeano " + (indice + 1);
-        personajePredeterminado = indice;
-        seleccionarAspecto(0);
-
-        for (int i = 0; i < botonesPredeterminados.Length; i++)
-        {
-            botonesPredeterminados[i].EnableInClassList("preset-card--selected", i == indice);
-        }
-
-        estadoSeleccion.text = "Plantilla " + (indice + 1) + " seleccionada. Puedes cambiar su nombre.";
-        actualizarVistaPrevia();
-    }
-
-    private void actualizarVistaPrevia()
-    {
-        string nombre = campoNombrePersonaje.value.Trim();
-        nombreVistaPrevia.text = string.IsNullOrEmpty(nombre) ? "Tu personaje" : nombre;
-        aspectoVistaPrevia.text = "Apariencia: " + nombresAspectos[aspectoSeleccionado];
-    }
-
-    private void confirmarPersonaje()
-    {
-        // Se eliminan espacios sobrantes y se impide comenzar con un nombre vacio.
-        string nombre = campoNombrePersonaje.value.Trim();
-        if (string.IsNullOrEmpty(nombre))
-        {
-            estadoSeleccion.text = "Escribe un nombre antes de continuar.";
-            return;
-        }
-
-        // PlayerPrefs permite que la seleccion sobreviva al cambio de escena.
-        PlayerPrefs.SetString(CLAVE_NOMBRE_PERSONAJE, nombre);
-        PlayerPrefs.SetInt(CLAVE_ASPECTO_PERSONAJE, aspectoSeleccionado);
-        PlayerPrefs.SetInt(CLAVE_PERSONAJE_PREDETERMINADO, personajePredeterminado);
-        PlayerPrefs.Save();
         SceneManager.LoadScene(SceneVideojuego);
     }
 
