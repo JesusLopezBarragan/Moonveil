@@ -1,36 +1,66 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi proyecto Unity</title>
+    <meta name="theme-color" content="#090d1d">
+    <meta name="description" content="Moonveil es una aventura de vida rural, exploración y fantasía desarrollada por Yellow Stone.">
+    <title>Moonveil — Un valle bajo la luna</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
-
-    <header>
-        <h1>Mi proyecto Unity</h1>
-        <p>Bienvenido a nuestra página oficial</p>
+<body class="home-page">
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Moonveil, inicio">
+            <img src="../Assets/Resources/Images/logo_moonveil.png" alt="" class="brand-logo">
+            <span class="brand-name">MOONVEIL</span>
+        </a>
+        <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+            <a class="nav-link is-current" href="index.html">Inicio</a>
+            <a class="nav-link" href="about.html">El proyecto</a>
+            <a class="nav-link" href="about.html#equipo">El equipo</a>
+        </nav>
+        <button class="nav-toggle" type="button" aria-label="Abrir navegación" aria-expanded="false" aria-controls="site-nav">
+            <span></span><span></span><span></span>
+        </button>
     </header>
 
     <main>
-        <section class="presentacion">
-            <h2>Sobre nuestro proyecto</h2>
-            <p>
-                Estamos trabajando en un proyecto increíble.
-                ¡Pronto tendrás más novedades!
-            </p>
-            <button id="boton">Descubrir más</button>
+        <section class="home-hero">
+            <div class="hero-stars" aria-hidden="true"></div>
+            <div class="home-hero-content">
+                <p class="eyebrow"><span class="eyebrow-star">✦</span> Un proyecto de Yellow Stone <span class="eyebrow-star">✦</span></p>
+                <img class="home-logo" src="../Assets/Resources/Images/logo_moonveil.png" alt="Moonveil">
+                <p class="home-tagline">Cultiva tu historia. Explora más allá del valle.</p>
+                <p class="home-intro">Una aventura independiente que une la calma de la vida rural con la curiosidad de descubrir un mundo lleno de posibilidades.</p>
+                <div class="hero-actions">
+                    <button class="button button-primary" id="boton" type="button">Descubrir más <span aria-hidden="true">→</span></button>
+                    <a class="button button-quiet" href="about.html">Conocer el proyecto</a>
+                </div>
+                <a class="scroll-cue" href="about.html" aria-label="Descubre el proyecto"><span></span></a>
+            </div>
+            <div class="hero-bottom-note"><span class="note-line"></span> UNA NUEVA VIDA TE ESPERA <span class="note-line"></span></div>
+        </section>
+
+        <section class="home-introduction section-wrap">
+            <div class="section-heading">
+                <p class="eyebrow">Una invitación a descubrir</p>
+                <h1>Un valle. Muchas historias.</h1>
+                <p>Moonveil es un videojuego en desarrollo inspirado por la libertad y el encanto de los juegos de vida rural. Haz crecer tu aventura a tu propio ritmo.</p>
+                <a class="text-link" href="about.html">Conoce el proyecto <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="home-orbit" aria-hidden="true">
+                <div class="orbit-ring"></div>
+                <div class="orbit-moon">✦</div>
+                <div class="orbit-sprite"><img src="../Assets/Sprites/Personaje/jugador_abajo_0.png" alt=""></div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>© 2026 Mi proyecto Unity</p>
+    <footer class="site-footer">
+        <a class="footer-brand" href="index.html">MOONVEIL</a>
+        <p>Un proyecto de Yellow Stone · En desarrollo</p>
+        <a href="about.html">Acerca del proyecto</a>
     </footer>
-
     <script src="script.js"></script>
-
 </body>
 </html>
