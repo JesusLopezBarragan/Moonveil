@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="false">
+    <Style src="PauseMenu.uss" />
+    <ui:VisualElement name="pause-root" class="pause-root">
+        <ui:Label name="player-name-tag" text="Jugador" class="player-name-tag" picking-mode="Ignore" />
+
+        <ui:VisualElement name="pause-overlay" class="pause-overlay" style="display: none;">
+            <ui:VisualElement name="pause-panel" class="pause-panel">
+                <ui:VisualElement class="pause-moon" />
+                <ui:Label text="PAUSA" class="pause-title" />
+                <ui:Label text="Tu aventura te espera bajo la luna." class="pause-subtitle" />
+                <ui:Button name="btn-resume" text="SEGUIR JUGANDO" class="pause-button pause-button--primary" />
+                <ui:Button name="btn-pause-settings" text="CONFIGURACIÓN" class="pause-button" />
+                <ui:Button name="btn-main-menu" text="SALIR AL MENÚ" class="pause-button pause-button--secondary" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
