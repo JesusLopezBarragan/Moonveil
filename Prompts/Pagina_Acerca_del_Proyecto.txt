@@ -1,0 +1,60 @@
+En la carpeta Web tienes los siguientes archivos principales: index.html, style.css y scripts.js.
+
+Quiero que analices el código existente y tomes como referencia el estilo visual del menú principal para crear una nueva página dedicada a presentar información sobre el proyecto.
+
+Objetivo
+
+Desarrollar una página de información (About / Acerca del proyecto) que mantenga la identidad visual del juego y que parezca una sección oficial, integrada perfectamente con el menú principal.
+
+Contenido de la página
+
+Quiero que incluyas diferentes apartados:
+
+Sobre el proyecto
+Presentación del juego.
+Historia y concepto detrás del proyecto.
+Objetivos y visión de futuro.
+Características principales y aspectos que lo hacen especial.
+Colaboradores y equipo
+Apartado para presentar a los desarrolladores y colaboradores.
+Nombre, rol y descripción de cada integrante.
+Espacio para fotografías o avatares.
+Diseño atractivo mediante tarjetas de presentación.
+Características del juego
+Mecánicas principales.
+Exploración y mundo.
+Construcción y personalización.
+Progresión y aventura.
+Sistemas y funcionalidades destacadas.
+Inspiración y universo
+Añade una sección visual que presente las referencias e inspiraciones del proyecto.
+Toma como inspiración páginas oficiales de videojuegos como Hytale, Stardew Valley, Minecraft y otros juegos del género sandbox, RPG y aventura.
+No copies sus diseños, sino que utiliza sus páginas como referencia para conseguir una presentación moderna, atractiva y profesional.
+Más información
+Apartado para novedades y futuras actualizaciones.
+Enlaces a redes sociales y comunidades.
+Información adicional que ayude a transmitir la personalidad y el universo del proyecto.
+Diseño y estilo visual
+Respeta la identidad visual del menú principal existente.
+Reutiliza la paleta de colores, tipografías, botones, efectos y elementos gráficos.
+Busca una estética inmersiva, relacionada con los videojuegos de aventura, fantasía y exploración.
+Utiliza tarjetas, ilustraciones, fondos, animaciones sutiles y transiciones.
+Añade efectos hover y pequeños detalles que aporten calidad visual.
+Organiza la información de forma clara, con una jerarquía visual bien definida.
+La página debe ser responsive y funcionar correctamente tanto en ordenador como en dispositivos móviles.
+Requisitos técnicos
+Trabaja sobre los archivos existentes dentro de la carpeta Web.
+Puedes modificar index.html, style.css y scripts.js si es necesario.
+Si consideras conveniente crear nuevos archivos HTML, CSS o JavaScript, puedes hacerlo, manteniendo una estructura organizada.
+No rompas ni elimines funcionalidades existentes del menú principal.
+Mantén el código limpio, organizado y reutilizable.
+Asegúrate de que todos los botones, enlaces, animaciones e interacciones funcionen correctamente.
+Resultado esperado
+
+Quiero una página que transmita la sensación de estar visitando la web oficial de un videojuego independiente bien desarrollado.
+
+No quiero una página básica con bloques de texto sin personalidad. Quiero algo visualmente atractivo, con personalidad propia, buena composición, imágenes, detalles y una presentación cuidada.
+
+Toma como referencia la calidad visual y la presentación de las webs oficiales de Hytale y Stardew Valley, adaptándolas a la identidad visual que ya tiene nuestro proyecto.
+
+Antes de empezar a programar, analiza los archivos existentes para comprender el diseño actual y asegúrate de que la nueva página encaje perfectamente con él.

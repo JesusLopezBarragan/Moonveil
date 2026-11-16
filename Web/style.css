@@ -949,7 +949,10 @@ button {
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    max-width: 900px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-right: auto;
+    margin-left: auto;
     gap: 14px;
 }
 
@@ -1113,7 +1116,7 @@ button {
     }
 
     .team-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .world-inner {
@@ -1408,6 +1411,12 @@ button {
     .team-grid {
         grid-template-columns: 1fr 1fr;
         gap: 10px;
+    }
+
+    .team-card:nth-child(3) {
+        width: calc(50% - 5px);
+        grid-column: 1 / -1;
+        justify-self: center;
     }
 
     .team-card {
