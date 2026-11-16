@@ -1,0 +1,47 @@
+PROMPTS UTILIZADOS - PROYECTO MOONVEIL
+=======================================
+
+1. Herramientas
+buenas claude necesito que en el programa moonveil de unity apliques el uso de herramientas tipo como el stardew valley que puedas utilizar un pico una hazada y esas cosas con una interfaz que visualice el jugador que tiene seleccionado y sea vistosa acorde al mapa que observas y al terminar realiza una documentación en un pdf que me expliques todo lo que hayas modificado como lo has realizado y realizalo a un nivel de un estudiante de dam2 de primer trimestre
+
+2. Árboles en dos fases e inventario
+vale ahora quiero que sumes que con la hacha pueda romper los arboles y que tengan dos fases el arbol, la primera rotura que al hacerlo deja el tronco a la mitad y que si le das a ese tronco ya desaparezca, aparte realiza un inventario que sea de 5x5 y pueda almacenar items y realiza de nuevo un pdf con esas modificaciones y programalo nivel estudiante dam2 primer trimestre de manera muy sencilla
+
+3. Pantalla de carga
+vale necesito que en el proyecto añadas que la funcionalidad del interfaz del inicio si le das a jugar salte otra interfaz tipo de carga con su barra de carga y con un fondo guapo tipo stardew valley y que tenga un lado que te de "consejos" que te vaya explicando los controles del juego
+
+4. Simplificar la pantalla de carga
+vale quiero que me hagas lo que ya te pedido anteriormente pero necesito que lo hagas al nivel de un estudiante de 2dam osea codigo sencillo y todo sencillo y los consejos tienen que ser explicaciones de los controles como wsad para moverse o cosas asi
+
+5. Panel de ayuda con la P
+vale ahora lo mismo con el novel de dificultad que has realizado lo anterior ahora necesito que dando por ejemplo a la p cuando ya estas dentro del juego jugando se abra un panel de ayuda explicandote los controles y me elimines lo que hay en la parte superior izquierda que pone los controles
+
+6. Quitar la franja oscura de los paneles
+elimina tanto en el cuadro de consejos como el de controles con la p la barra oscura que tiene puesta visualmente y dejalo todo de un mismo color
+
+7. Tienda con NPC
+realiza ahora dentro del mapa una tienda en el cual exista un npc que al hablarle me de a cambio de zanahorias monedas
+
+8. Tienda como edificio con interior
+vale quiero que no sea una tiendita si no una casa grande pero que se vea que es un supermercado o tienda y que te pongas en la puerta le des a un boton para entrar y dentro haya estanterias con productos y un mostrador en el cual estara este npc
+
+9. Mina con niveles
+realiza ahora que en uno de los caminos te lleve a una mina en la que tiene diversos niveles de profundidad y puedas minar y te pueda dar un mineral o piedra y que lo puedas vender en la tienda del npc
+
+10. Marcador y animación de recoger objetos
+realiza que en vez de que sea tan soso la parte de la cantidad de zanahorias y monedas sea el texto y el numero hazlo mas chulo y vistoso para el usuario y cuando minas una piedra o mineral o arbol o lo que sea tipo cosecha de zzanahora aparezca algo visual como que lo esta recogiendo aquello que se le va a ir al inventario de manera que se vea que esta guardandolo y que lo coge del suelo
+
+11. PDFs para la defensa
+realiza pdfs de todo lo añadido hoy explicandome como deberia explicarlo en una defensa de proyecto y ponlos en el escritorio los pdfs
+
+12. Guía paso a paso
+centralo en vez de la defensa explicandome todo lo que has realizado paso a paso para que alguien que lo quiere hacer desde cero lo pueda hacer sin tu ayuda
+
+13. Merge de ramas
+metete en el feature/jesus-b y realiza un merge de la de feature/eduardo y fusionalas
+
+14. Subir a GitHub
+si subelo
+
+15. Este archivo
+realiza un txt en el escritorio de los prompts
